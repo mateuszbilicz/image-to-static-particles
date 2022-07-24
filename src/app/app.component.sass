@@ -1,0 +1,68 @@
+.sidenav
+  box-shadow: 2px 0 4px rgba(0, 0, 0, .3)
+  min-width: 300px
+.sidenav-contents
+  height: calc(100vh - 64px)
+  display: grid
+  place-items: center
+  .container
+    canvas
+      margin-bottom: 16px
+h2
+  padding: 16px 16px 0 16px
+mat-slider
+  width: calc(100% - 32px)
+  margin: 16px
+  box-sizing: border-box
+mat-card
+  overflow: auto
+  transition: filter .6s ease-in-out
+  &:hover
+    filter: brightness(1.15)
+.input-container
+  max-width: 180px
+  text-overflow: ellipsis
+  overflow: hidden
+  label
+    cursor: pointer
+    max-width: 100px
+    border-radius: 4px
+    padding: 8px 16px
+    text-align: center
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2)
+    float: left
+    margin-bottom: 16px
+    transition: all .4s ease-in-out
+    &:hover
+      box-shadow: 0 0 5px rgba(0, 0, 0, .3), 0 1px 12px rgba(0, 0, 0, .2), 0 2px 16px rgba(0, 0, 0, .1)
+  p
+    width: 100%
+    float: left
+  button
+    float: right
+#input-image
+  display: none
+.processing-card
+  display: grid
+  place-items: center
+  h2
+    margin-top: -8px
+  h4
+    margin-bottom: 4px
+  span
+    width: 100%
+    margin-top: 16px
+    padding-left: 16px
+  .progress-counter
+    font-size: 24px
+    font-weight: bold
+.error-card
+  margin-top: 16px
+  h2
+    padding: 0 4px
+    margin-bottom: 8px
+  span
+    padding-left: 4px
+  button
+    float: right
+    margin-top: 16px
